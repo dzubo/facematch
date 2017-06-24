@@ -1,7 +1,15 @@
 facematch
 ==============================
 
-Emotion recognition from images
+Emotion recognition from images.
+
+Download the fer2013.csv file from here:
+[https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data]
+
+Extract images from the fer2013.csv file.
+```
+python src/data/make_dataset.py data/raw/fer2013/fer2013.csv data/processed/fer2013/all/
+```
 
 Project Organization
 ------------
