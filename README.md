@@ -6,10 +6,18 @@ Emotion recognition from images.
 Download the fer2013.csv file from here:
 [https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data]
 
-Extract images from the fer2013.csv file.
+Extract images from the fer2013.csv file:
 ```
 python src/data/make_dataset.py data/raw/fer2013/fer2013.csv data/processed/fer2013/all/
 ```
+
+Generate bottleneck features on VGG16 net:
+
+```
+python src/features/build_features.py data/processed/fer2013/all/ data/interim/
+```
+
+
 
 Project Organization
 ------------

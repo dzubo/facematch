@@ -39,7 +39,7 @@ def main(input_filepath, output_filepath):
     print('Image number: {}'.format(im_number))
 
     for i in range(0, im_number):
-        print(i)
+        # print(i)
         img = images[i].reshape(48, 48)
 
         im = Image.fromarray(img).convert('RGB')
