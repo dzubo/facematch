@@ -20,16 +20,15 @@ def main(input_filepath, output_filepath):
         cleaned data ready to be analyzed (saved in ../processed).
     """
     p = Path(input_filepath)
-    data = pd.read_csv(p)
+    data = pd.read_csv(p)[['emotion', 'pixels']]
 
-    images = data.pixels
-    labels = data.emotion
+    df = data[['emotion', 'pixels']]
+
     images = images.apply(lambda x: x.split(' '))
     images = list(images)
     images = np.asfarray(images)
-    emotions = {0: 'angry', 1: 'disgust', 2: 'fear', 3: 'happy', 4: 'sad', 5: 'surprise', 6: 'neutral'}
-    # classes = [v for v in emotions.values()]
-
+    # emotions = {0: 'angry', 1: 'disgust', 2: 'fear', 3: 'happy', 4: 'sad', 5: 'surprise', 6: 'neutral'}
+    emotions = {0: 'angry', 2: 'fear', 3: 'happy', 4: 'sad', 5: 'surprise', 6: 'neutral'}
 
     # labels = [child.name for child in p.iterdir() if child.is_dir()]
     # print(labels)
@@ -37,6 +36,11 @@ def main(input_filepath, output_filepath):
     im_number = images.shape[1]
     train_number = round(im_number * 0.8)
     print('Image number: {}'.format(im_number))
+
+    validation_ratio = 0.2
+    for label_code, label in emotions.items():
+        # todo balancing
+
 
     for i in range(0, im_number):
         # print(i)
