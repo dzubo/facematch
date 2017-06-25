@@ -17,7 +17,12 @@ Generate bottleneck features on VGG16 net:
 python src/features/build_features.py data/processed/fer2013/all/ data/interim/
 ```
 
+## TODO
 
+1. Balance training and validation datasets
+1. Do data augmentation
+1. Ensure the images cycle over epochs
+1. Use color dataset
 
 Project Organization
 ------------
