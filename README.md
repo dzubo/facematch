@@ -17,6 +17,12 @@ Generate bottleneck features on VGG16 net:
 python src/features/build_features.py data/processed/fer2013/all/ data/interim/
 ```
 
+Train the model:
+
+```
+python src/models/train_model.py data/interim/ models/fer2013-01/ data/logs/012
+```
+
 ## TODO
 
 1. Balance training and validation datasets
