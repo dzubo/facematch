@@ -1,5 +1,17 @@
-facematch
+Facematch
 ==============================
+
+## The project
+The CNN used to identify emotions and help people to learn accurate facial expressions.
+
+## Issues
+People lack in Emotional Quotient and most of the games do not include the emotional feedback or input; so that they can improve their EQ.
+
+## Solution
+FaceMatch takes facial expressions as the input from the users and gives score based on the accuracy of their emotions. It is based on the Deep Neural Network which is trained on about 10,000 images. The prototype for FaceMatch is an iOS app.
+
+## How It Works?
+![steps diagram](/reports/figures/how-it-works.png)
 
 Emotion recognition from images.
 
