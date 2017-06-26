@@ -2,7 +2,10 @@ Facematch
 ==============================
 
 ## The project
-The CNN used to identify emotions and help people to learn accurate facial expressions.
+The CNN used to identify emotions and help people to learn accurate facial expressions.  
+[Hackathon Presentation](https://docs.google.com/presentation/d/1RXmRfiQj4Uh1Q2nfpQoh98v15LFccNStylFzlv_rV_U/edit?usp=sharing)  
+This repository contains dataset visualization conde and deep learning training code.  
+You can find server and ios code here: https://github.com/kkwoker/facematch
 
 ## Issues
 People lack in Emotional Quotient and most of the games do not include the emotional feedback or input; so that they can improve their EQ.
@@ -13,10 +16,11 @@ FaceMatch takes facial expressions as the input from the users and gives score b
 ## How It Works?
 ![steps diagram](/reports/figures/how-it-works.png)
 
-Emotion recognition from images.
+--------------------------------------------------
 
-Download the fer2013.csv file from here:
-[https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data]
+## Emotion recognition from images
+
+Download the [fer2013.csv file](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data).
 
 Extract images from the fer2013.csv file:
 ```
